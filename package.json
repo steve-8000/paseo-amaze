@@ -2,16 +2,11 @@
   "name": "paseo-amaze",
   "version": "0.1.0",
   "private": false,
-  "description": "Reusable setup scripts for exposing a local Paseo DMG daemon through Direct connection.",
+  "description": "Minimal Paseo provider setup for connecting the local amaze CLI.",
   "type": "module",
   "scripts": {
-    "setup:direct": "node scripts/setup-direct-connection.mjs",
-    "verify:direct": "node scripts/setup-direct-connection.mjs --verify-only",
-    "workspace:open": "node scripts/open-workspace.mjs"
-  },
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "ws": "^8.18.0"
+    "setup": "node scripts/setup-amaze-provider.mjs",
+    "verify": "node scripts/setup-amaze-provider.mjs --verify-only"
   },
   "engines": {
     "node": ">=20"
